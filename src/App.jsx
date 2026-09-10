@@ -12,14 +12,15 @@ import Contact from "./components/Contact";
 function App() {
 
   return (
-  <div className="min-h-screen bg-cyan-100 text-white overflow-hidden">
+  <div className="min-h-screen bg-[#F5F1E8] text-green-900 overflow-hidden">
   <Navbar />
+  <div className="pt-14 sm:pt-16 md:pt-20">
   <Book />
   <Services />
   <Contact />
   <About />
 
-
+</div>
   </div>
 
   );
