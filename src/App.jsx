@@ -4,6 +4,8 @@ import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
+import ScrollToTop from "./components/ScrollToTop";
 
 function Home() {
   return (
@@ -21,6 +23,7 @@ function Home() {
 function App() {
   return (
     <BrowserRouter>
+    <ScrollToTop />
       <div className="min-h-screen bg-[#F5F1E8] text-green-900 overflow-hidden">
         <Navbar />
         <div className="pt-14 sm:pt-16 md:pt-20">
@@ -30,6 +33,7 @@ function App() {
             <Route path="/services" element={<Services />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
+          <Footer />
         </div>
       </div>
     </BrowserRouter>
